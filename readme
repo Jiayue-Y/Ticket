@@ -1,0 +1,2 @@
+This time complexity of the program is O(n), n being the numbers of operations made.
+The space complexity is O(n), n being the number of tickets in queue.
