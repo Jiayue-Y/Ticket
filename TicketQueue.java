@@ -71,9 +71,9 @@ public class TicketQueue {
 
                 case 'Z':
                 case 'z':
-                    System.out.printf("Total serving time: %.1f" +
+                    System.out.printf("Total serving time: %.1f minutes" +
                             "\nTotal tickets served: %d" +
-                            "\nAverage serving time per table: %.1f\n",
+                            "\nAverage serving time per table: %.1f minutes\n",
                             totalWaitTime, servedTicketNum, averageWaitTime);
                     break;
 
