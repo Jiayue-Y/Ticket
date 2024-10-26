@@ -60,9 +60,9 @@ public class TicketQueue {
                     if (!queue.empty()) {
                         System.out.println("Next in line: No. " +
                                 queue.peek().getTicketNumber());
-                        System.out.println("Average wait time per number is: " +
-                                averageWaitTime);
-                        System.out.println("Current tickets waiting: " +
+                        System.out.printf("Average wait time per number is: " +
+                                "%.1f minutes", averageWaitTime);
+                        System.out.println("Number of tickets in line: " +
                                 queue.getSize());
                     } else {
                         System.out.println("The queue is currently empty.");
@@ -71,10 +71,10 @@ public class TicketQueue {
 
                 case 'Z':
                 case 'z':
-                    System.out.println("Total serving time: " + totalWaitTime +
-                            "\nTotal tickets served: " + servedTicketNum +
-                            "\nAverage serving time per table: " +
-                            averageWaitTime);
+                    System.out.printf("Total serving time: %.1f" +
+                            "\nTotal tickets served: %d" +
+                            "\nAverage serving time per table: %.1f\n",
+                            totalWaitTime, servedTicketNum, averageWaitTime);
                     break;
 
                 default:
