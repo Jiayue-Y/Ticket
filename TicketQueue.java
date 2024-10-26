@@ -61,7 +61,7 @@ public class TicketQueue {
                         System.out.println("Next in line: No. " +
                                 queue.peek().getTicketNumber());
                         System.out.printf("Average wait time per number is: " +
-                                "%.1f minutes", averageWaitTime);
+                                "%.1f minutes\n", averageWaitTime);
                         System.out.println("Number of tickets in line: " +
                                 queue.getSize());
                     } else {
